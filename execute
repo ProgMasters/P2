@@ -1,0 +1,4 @@
+#!/bin/bash
+javac src/P2/*.java -d classes
+java -cp "classes" P2.Compiler < $1 > program.code
+java -cp "classes" P2.Interpreter < program.code

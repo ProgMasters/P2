@@ -1,0 +1,3 @@
+#!/bin/bash
+javac src/P2/*.java -d classes
+java -cp "classes" P2.Compiler < $1 | java -cp "classes" P2.Interpreter
